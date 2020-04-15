@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+    float y,re;
+    int x;
+    scanf("%d %f",&x,&y);
+
+    if((x%5==0) && (((float)x+.50)<=y) && x>0 && y>0)
+    {
+        re=y-((float)x+.50);
+        printf("%.2f",re);
+    }
+    else
+    {
+        printf("%.2f",y);
+    }
+
+    return 0;
+}
